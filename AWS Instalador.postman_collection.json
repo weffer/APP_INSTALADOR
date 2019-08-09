@@ -1,0 +1,2964 @@
+{
+	"info": {
+		"_postman_id": "8f2f9cdd-53f2-4134-b60c-e8e0708ce0b6",
+		"name": "AWS Instalador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/instalador/api/v1-0/rutastecnico/desactivarruta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2018-03-26T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "EAI",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"reiniciarDeco\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n\t\t\t\"nroDocumento\":\"{{nrodocumento}}\"         \r\n        }\r\n    \r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/rutastecnico/desactivarruta",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"rutastecnico",
+						"desactivarruta"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/instalador/api/v1-0/rutastecnico/desactivarruta",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2018-03-26T09:09:09.000Z",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "userId",
+								"value": "EAI",
+								"type": "text"
+							},
+							{
+								"key": "msgid",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"reiniciarDeco\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n\t\t\t\"nroDocumento\":\"{{nrodocumento}}\"         \r\n        }\r\n    \r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/rutastecnico/desactivarruta",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"rutastecnico",
+								"desactivarruta"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 11 Jun 2019 21:56:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.14.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "343"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, accept, access_token, access-control-request-headers, msgid, idTransaccion, userId, timestamp"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "6be22ffe5d002376040a00ad"
+						},
+						{
+							"key": "requestId",
+							"value": "0000016b264fa2cd-1f0037"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"sdfsd123\",\n                \"timestamp\": \"2019-06-11T16:56:06-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS02-a3deeec6-179c-4e7e-8f77-fe2fe26bc0a4\"\n                }\n            }\n        },\n        \"Body\": {\n            \"codigoRespuesta\": 1,\n            \"mensajeRespuesta\": \"Error en la desactivacion\",\n            \"idTransaccion\": \"10\",\n            \"titulo\": \"\",\n            \"descripcion\": \"\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/clarohogar/api/generatoken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bda6ff06-ea9c-4585-8096-f8ed55d50ec9",
+						"exec": [
+							"let jsonData = pm.response.json()",
+							"pm.environment.set(\"token_api\", jsonData.access_token)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"client_id\": \"{{client_id}}\",\r\n    \"client_secret\": \"{{client_secret}}\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{domain}}/clarohogar/api/generatoken",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"clarohogar",
+						"api",
+						"generatoken"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"client_id\": \"{{client_id}}\",\r\n    \"client_secret\": \"{{client_secret}}\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{domain}}/clarohogar/api/generatoken",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"clarohogar",
+								"api",
+								"generatoken"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 21 May 2019 16:21:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 () OpenSSL/1.0.2k-fips"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "6d317b06-7be4-11e9-80c1-eb02938a088c"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "127"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "aCrJSHddoAMF41A="
+						},
+						{
+							"key": "x-amzn-Remapped-Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "x-amzn-Remapped-Date",
+							"value": "Tue, 21 May 2019 16:21:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"950d0646-8152-41e0-8866-b426a638048b\",\n    \"token_type\": \"Bearer\",\n    \"expires_in\": 3600,\n    \"scope\": \"oob\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/claro/authenticate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "333f58f7-97a2-46e0-b6af-4a83b7e66ea0",
+						"exec": [
+							"let jsonData = pm.response.json()",
+							"pm.environment.set(\"token_aws\", jsonData.body.tokenId)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t  \"username\": \"{{username}}\",\r\n\t  \"password\": \"{{password}}\",\r\n\t  \"plataforma\": \"ios\",\r\n\t  \"version\":\"3.0.2\",\r\n\t  \"canal\" : \"clarohogarapp\"\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/claro/authenticate",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"claro",
+						"authenticate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t  \"username\": \"{{username}}\",\r\n\t  \"password\": \"{{password}}\",\r\n\t  \"plataforma\": \"ios\",\r\n\t  \"version\":\"3.0.2\",\r\n\t  \"canal\" : \"clarohogarapp\"\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/claro/authenticate",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"claro",
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 21 May 2019 16:22:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 () OpenSSL/1.0.2k-fips"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1128"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "ac835a06-7be4-11e9-ab32-83aa3155e30c"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "aCrZ4EUjIAMFwjw="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5ce425d8-be3cda8c223d2af803e2262c;Sampled=0"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"auditResponse\": {\n        \"codigoRespuesta\": \"0\",\n        \"descripcionRespuesta\": \"Operacion exitosa\",\n        \"mesajeRespuesta\": \"Operacion exitosa\"\n    },\n    \"body\": {\n        \"isNew\": \"false\",\n        \"userId\": \"b933e8e3-5dc3-44e4-977e-99a1ceada18a\",\n        \"tokenId\": \"eyJraWQiOiI1THNkUTNzVW82MTF3VDV3Zmp0eVwvWGl0UjR4b01ma3JVaEF4SEJYREFoUT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJiNjgyMjlkOS0zN2NmLTQyNjMtYjFlMS1kZjI3ZTcyOGQ4OWUiLCJhdWQiOiI1MjcyMzZqamQwNjJrOGRuZWlkYmtvbTNuYSIsImV2ZW50X2lkIjoiYjI0ZWUwNmItN2MxMi0xMWU5LTkzZDAtZmQ0NmM4NTZjMTcxIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1NTg0NzU1MzUsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX09HQWZEV1hqNCIsImNvZ25pdG86dXNlcm5hbWUiOiJtaWNsYXJvYXBwdXNlcmFwaSIsImV4cCI6MTU1ODQ3OTEzNSwiaWF0IjoxNTU4NDc1NTM1fQ.GJgPvBPO0dtC8HETnDvA21TN50TB4Gw5m2hW8rSjqXTMZPYtBqL15XCJmJIkpbV2AK2cU42wRo_-HzHFbkN1xXaJi23k32tczGRgLbwTdiKfi6fm64pdQC-1-gnJxBfMY-l3bIxHdszMXnv0t9UXvP1gS2lrB9OqDBTpEZ04AGBzg0SWYjm12fDvlaqmg15N2Pl5H3avAzmsfOeyU39UdPf-9jSN8KQFQBZIUm3U8awqDyqrfDASDmlwGJDPLOcl0tmEKz06oMZf1JzzYoht1l9hQC3nhrmyQtx5JYoJTVGLoXutgGHixx8oW7LC2SVWzqA4OPbH2U4nImYV-c_a3w\"\n    },\n    \"datosAdicionales\": {},\n    \"maintanceMode\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/api/v1-0/validalogueos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2018-03-26T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "12345678",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"obtenerMediosPago\",\r\n                \"pid\": \"123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            },\r\n            \"headerRequest\": {\r\n              \t\"idTransaccion\": \"1000004000000\",\r\n                \"msgid\": \"10\",\r\n                \"timestamp\": \"2018-04-01T22:43:24.352Z\",\r\n                \"accept\": \"application/json\",\r\n                \"userId\": \"user001\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n        \t\"validarTecnicoRequest\": {\r\n            \t\"nroDocumento\": \"{{nrodocumento}}\"\r\n            }            \r\n        }\r\n    \r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/validalogueos",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"validalogueos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2018-03-26T09:09:09.000Z",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "12345678",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"obtenerMediosPago\",\r\n                \"pid\": \"123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"200.108.99.42\"\r\n            },\r\n            \"headerRequest\": {\r\n              \t\"idTransaccion\": \"1000004000000\",\r\n                \"msgid\": \"10\",\r\n                \"timestamp\": \"1020\",\r\n                \"accept\": \"application/json\",\r\n                \"userId\": \"user001\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n        \t\"validarTecnicoRequest\": {\r\n            \t\"nroDocumento\": \"10747303\"\r\n            }            \r\n        }\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/validalogueos",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"validalogueos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 May 2019 21:54:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 () OpenSSL/1.0.2k-fips"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "480"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "ee6d684e-80c9-11e9-9e6c-9bd987c7ead2"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "480"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "aXNikEh1IAMF_RA="
+						},
+						{
+							"key": "x-amzn-Remapped-Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "_headerRes",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "x-amzn-Remapped-Date",
+							"value": "Mon, 27 May 2019 21:54:33 GMT"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "d874c9ef5cec5c79099ce231"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"123\",\n                \"timestamp\": \"2019-05-27T16:54:06-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS01-ddbf01e4-d24d-46bb-9212-efc974d8eac0\"\n                }\n            }\n        },\n        \"Body\": {\n            \"responseStatus\": {\n                \"status\": \"0\",\n                \"codeResponse\": \"0\",\n                \"descriptionResponse\": \"Transaccion ok\",\n                \"errorLocation\": \"\",\n                \"date\": \"\",\n                \"origin\": \"\",\n                \"errorDetails\": [\n                    {\n                        \"errorCode\": \"\",\n                        \"errorDescripcition\": \"\"\n                    }\n                ]\n            },\n            \"responseData\": {\n                \"codigo\": \"0\",\n                \"mensaje\": \"Exito\",\n                \"tecnico\": {\n                    \"nombre\": \"ALDAVE GODOY YEREMY EXCEQUIEL\",\n                    \"contrata\": \"CARLEI TELECOMUNICACIONES SAC\"\n                }\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/api/v1-0/ordenestecnicas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2018-03-26T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "EAI",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MessageRequest\": {\r\n        \"Header\": {\r\n            \"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"ordenarTrabajo\",\r\n                \"pid\": \"sdfsd111123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"2018051600000011\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            },\r\n            \"headerRequest\": {\r\n                \"idTransaccion\": \"201812111000\",\r\n                \"msgid\": \"2000\",\r\n                \"timestamp\": \"2017-12-29T09:09.00Z\",\r\n                \"accept\": \"application/json\",\r\n                \"userId\": \"USREAI\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n            \"ordenTrabajoRequest\": {\r\n                \"nroDocumento\": \"10134120\"\r\n            }\r\n        }\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/ordenestecnicas",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"ordenestecnicas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/instalador/api/v1-0/ordenestecnicas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2018-03-26T09:09:09.000Z",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "userId",
+								"value": "EAI",
+								"type": "text"
+							},
+							{
+								"key": "msgid",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MessageRequest\": {\r\n        \"Header\": {\r\n            \"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"ordenarTrabajo\",\r\n                \"pid\": \"sdfsd111123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"2018051600000011\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            },\r\n            \"headerRequest\": {\r\n                \"idTransaccion\": \"201812111000\",\r\n                \"msgid\": \"2000\",\r\n                \"timestamp\": \"2017-12-29T09:09.00Z\",\r\n                \"accept\": \"application/json\",\r\n                \"userId\": \"USREAI\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n            \"ordenTrabajoRequest\": {\r\n                \"nroDocumento\": \"10134120\"\r\n            }\r\n        }\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/ordenestecnicas",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"ordenestecnicas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jun 2019 20:02:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.14.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "598"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "e1df17c05d0a94c97e0ff40d"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"MessageResponse\": {\n    \"Header\": {\n      \"HeaderResponse\": {\n        \"consumer\": \"TCRM\",\n        \"pid\": \"sdfsd111123\",\n        \"timestamp\": \"2019-06-26T15:02:18-05:00\",\n        \"VarArg\": \"\",\n        \"status\": {\n          \"type\": \"0\",\n          \"code\": \"0\",\n          \"message\": \"EJECUCIÓN CON ÉXITO\",\n          \"msgid\": \"DPS01-b6f04600-59d9-4cd9-8a3a-c017dfe1c6b8\"\n        }\n      }\n    },\n    \"Body\": {\n      \"responseStatus\": {\n        \"status\": \"0\",\n        \"codeResponse\": \"0\",\n        \"descriptionResponse\": \"Transaccion OK\",\n        \"errorLocation\": \"\",\n        \"date\": \"\",\n        \"origin\": \"\",\n        \"errorDetails\": [\n          {\n            \"errorCode\": \"\",\n            \"errorDescripcition\": \"\"\n          }\n        ]\n      },\n      \"responseData\": {\n        \"codigo\": \"0\",\n        \"mensaje\": \"Exito\",\n        \"fecActual\": \"2019-06-26 11:08:17\",\n        \"listaOrdenTrabajo\": [\n          {\n            \"nroOrden\": \"2023678\",\n            \"tipoOrden\": \"HFC MANTENIMIENTO\",\n            \"subTipOrden\": \"MANTENIMIENTO HFC\",\n            \"estadoAgenda\": \"Pendiente\",\n            \"codEstadoAgenda\": \"1\",\n            \"fecProg\": \"2019-06-19 00:00:00\",\n            \"desfase\": \"\",\n            \"idAgenda\": \"18572282\",\n            \"numeroSot\": \"34626726\"\n          },\n          {\n            \"nroOrden\": \"2023682\",\n            \"tipoOrden\": \"HFC MANTENIMIENTO\",\n            \"subTipOrden\": \"MANTENIMIENTO HFC\",\n            \"estadoAgenda\": \"Pendiente\",\n            \"codEstadoAgenda\": \"1\",\n            \"fecProg\": \"2019-06-19 00:00:00\",\n            \"desfase\": \"\",\n            \"idAgenda\": \"18572210\",\n            \"numeroSot\": \"34626652\"\n          }\n        ],\n        \"listaOrdenTrabajoOtros\": [\n          {\n            \"nroOrden\": \"82232654\",\n            \"tipoOrden\": \"HFC MANTENIMIENTO\",\n            \"subTipOrden\": \"MANTENIMIENTO HFC\",\n            \"estadoAgenda\": \"Completado\",\n            \"codEstadoAgenda\": \"5\",\n            \"fecProg\": \"2019-06-19 00:00:00\",\n            \"desfase\": \"\",\n            \"idAgenda\": \"18572282\",\n            \"numeroSot\": \"34626726\"\n          },\n          {\n            \"nroOrden\": \"82023654\",\n            \"tipoOrden\": \"HFC MANTENIMIENTO\",\n            \"subTipOrden\": \"MANTENIMIENTO HFC\",\n            \"estadoAgenda\": \"Suspendido\",\n            \"codEstadoAgenda\": \"3\",\n            \"fecProg\": \"2019-06-19 00:00:00\",\n            \"desfase\": \"\",\n            \"idAgenda\": \"18572282\",\n            \"numeroSot\": \"34626726\"\n          },\n          {\n            \"nroOrden\": \"82077654\",\n            \"tipoOrden\": \"HFC MANTENIMIENTO\",\n            \"subTipOrden\": \"MANTENIMIENTO HFC\",\n            \"estadoAgenda\": \"Cancelado\",\n            \"codEstadoAgenda\": \"6\",\n            \"fecProg\": \"2019-06-19 00:00:00\",\n            \"desfase\": \"\",\n            \"idAgenda\": \"18572282\",\n            \"numeroSot\": \"34626726\"\n          },\n          {\n            \"nroOrden\": \"82077654\",\n            \"tipoOrden\": \"HFC MANTENIMIENTO\",\n            \"subTipOrden\": \"MANTENIMIENTO HFC\",\n            \"estadoAgenda\": \"No completado\",\n            \"codEstadoAgenda\": \"4\",\n            \"fecProg\": \"2019-06-19 00:00:00\",\n            \"desfase\": \"\",\n            \"idAgenda\": \"18572282\",\n            \"numeroSot\": \"34626726\"\n          }\n        ]\n      }\n    }\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/api/v1-0/rutastecnico/activarruta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2018-03-26T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "EAI",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"reiniciarDeco\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n\t\t\t\"nroDocumento\":\"{{nrodocumento}}\"         \r\n        }\r\n    \r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/rutastecnico/activarruta",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"rutastecnico",
+						"activarruta"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/instalador/api/v1-0/rutastecnico/activarruta",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2018-03-26T09:09:09.000Z",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "userId",
+								"value": "EAI",
+								"type": "text"
+							},
+							{
+								"key": "msgid",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"reiniciarDeco\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n\t\t\t\"nroDocumento\":\"{{nrodocumento}}\"         \r\n        }\r\n    \r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/rutastecnico/activarruta",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"rutastecnico",
+								"activarruta"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jun 2019 23:41:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.14.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "346"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, accept, access_token, access-control-request-headers, msgid, idTransaccion, userId, timestamp"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "6be22ffe5cfeeaaaf7ca23af"
+						},
+						{
+							"key": "requestId",
+							"value": "0000016b264fa2cd-1a47ed"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"sdfsd123\",\n                \"timestamp\": \"2019-06-10T18:41:34-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS02-8c712822-7bad-4544-83fb-fe2fe26b191c\"\n                }\n            }\n        },\n        \"Body\": {\n            \"codigoRespuesta\": 0,\n            \"mensajeRespuesta\": \"Ya se encuentra activo\",\n            \"idTransaccion\": \"10\",\n            \"titulo\": \"\",\n            \"descripcion\": \"\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/api/v1-0/rutastecnico/validar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2018-03-26T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "EAI",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"validarRuta\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n\t\t\t\"nroDocumento\":\"{{nrodocumento}}\"         \r\n        }\r\n    \r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/rutastecnico/validar",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"rutastecnico",
+						"validar"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/instalador/api/v1-0/rutastecnico/validar",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2018-03-26T09:09:09.000Z",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "userId",
+								"value": "EAI",
+								"type": "text"
+							},
+							{
+								"key": "msgid",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"validarRuta\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n\t\t\t\"nroDocumento\":\"{{nrodocumento}}\"         \r\n        }\r\n    \r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/rutastecnico/validar",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"rutastecnico",
+								"validar"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jun 2019 16:02:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.14.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "338"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, accept, access_token, access-control-request-headers, msgid, idTransaccion, userId, timestamp"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "6be22ffe5d0cffa58157210d"
+						},
+						{
+							"key": "requestId",
+							"value": "0000016b264fa2cd-4d0ae5"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"sdfsd123\",\n                \"timestamp\": \"2019-06-21T11:02:47-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS02-ebafefdc-27fa-48fa-bd2a-fe2fe26be268\"\n                }\n            }\n        },\n        \"Body\": {\n            \"idTransaccion\": \"10\",\n            \"codigoRespuesta\": \"0\",\n            \"mensajeRespuesta\": \"Ninguno\",\n            \"estado\": 1,\n            \"titulo\": \"\",\n            \"descripcion\": \"\"\n        }\n    }\n}"
+				},
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2018-03-26T09:09:09.000Z",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "userId",
+								"value": "EAI",
+								"type": "text"
+							},
+							{
+								"key": "msgid",
+								"value": "10",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"validarRuta\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"172.19.35.134\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n     \t\"nroDocumento\":\"42646227\"           \r\n        }\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/rutastecnico/validar",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"rutastecnico",
+								"validar"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 May 2019 23:13:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 () OpenSSL/1.0.2k-fips"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "337"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "085bbd0b-80d5-11e9-9b11-4f6b4534b8b3"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "337"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, accept, access_token, access-control-request-headers, msgid, idTransaccion, userId, timestamp"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "requestId",
+							"value": "00000169de8d9718-7a77f"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "aXZLkGcjoAMFZrw="
+						},
+						{
+							"key": "x-amzn-Remapped-Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "_headerRes",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "x-amzn-Remapped-Date",
+							"value": "Mon, 27 May 2019 23:13:56 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "d874c9ef5cec6f1709ab43e1"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"sdfsd123\",\n                \"timestamp\": \"2019-05-27T18:13:29-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS01-28b8734e-a48c-4c40-b280-efc974d870ae\"\n                }\n            }\n        },\n        \"Body\": {\n            \"idTransaccion\": \"10\",\n            \"codigoRespuesta\": \"0\",\n            \"mensajeRespuesta\": \"Ninguno\",\n            \"estado\": 1,\n            \"titulo\": \"\",\n            \"descripcion\": \"\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/api/v1-0/registrosactividades (iniciar actividad)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2018-03-26T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "EAI",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"MessageRequest\": {\r\n \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"listarOtsToa\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"{{wsip_login}}\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n\t\t\t\"nroOrden\" :\"3194\"\r\n        }    \r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/registrosactividades",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"registrosactividades"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2018-03-26T09:09:09.000Z",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "DEVTEST",
+								"type": "text"
+							},
+							{
+								"key": "userId",
+								"value": "USEREAI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"MessageRequest\": {\r\n \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"listarOtsToa\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"172.19.67.140\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n\t\t\"nroOrden\" :\"3194\"\r\n        }    \r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/registrosactividades",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"registrosactividades"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 May 2019 23:24:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 () OpenSSL/1.0.2k-fips"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "349"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "8703cac9-80d6-11e9-bdf5-853c7287bb9b"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "x-amzn-Remapped-Content-Length",
+							"value": "349"
+						},
+						{
+							"key": "requestId",
+							"value": "00000169de8d9718-7a7ea"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "aXav4EZYoAMFzEg="
+						},
+						{
+							"key": "x-amzn-Remapped-Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "_headerRes",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "x-amzn-Remapped-Date",
+							"value": "Mon, 27 May 2019 23:24:37 GMT"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "d874c9ef5cec719909ad2021"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"sdfsd123\",\n                \"timestamp\": \"2019-05-27T18:24:11-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS01-fd4baa05-21ea-42a4-a6c0-efc974d8db5d\"\n                }\n            }\n        },\n        \"Body\": {\n            \"codigoRespuesta\": 0,\n            \"mensajeRespuesta\": \"Operacion Exitosa\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/api/v1-0/parametrosincognito/parametros",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2018-03-26T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "EAI",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"MessageRequest\": {\r\n    \"Header\": {\r\n             \"HeaderRequest\": {\r\n               \"consumer\": \"TCRM\",\r\n               \"country\": \"PERU\",\r\n               \"dispositivo\": \"MOVIL\",\r\n               \"language\": \"ES\",\r\n               \"modulo\": \"OM\",\r\n               \"msgType\": \"REQUEST\",\r\n               \"operation\": \"obtenerParametros\",\r\n               \"pid\": \"201804011000\",\r\n               \"system\": \"OM\",\r\n               \"timestamp\": \"2019-04-01T10:12:51-05:00\",\r\n               \"userId\": \"USREAI\",\r\n               \"wsIp\": \"{{wsip_login}}\"\r\n           }\r\n       },\r\n    \"Body\": {\r\n\t\t\"macAddress\":\"BC:D1:65:3C:EE:02\"\r\n       }\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/parametrosincognito/parametros",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"parametrosincognito",
+						"parametros"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "access_token",
+								"type": "text",
+								"value": "{{token_api}}"
+							},
+							{
+								"key": "AuthorizationApi",
+								"type": "text",
+								"value": "{{token_aws}}"
+							},
+							{
+								"key": "timestamp",
+								"type": "text",
+								"value": "2018-03-26T09:09:09.000Z"
+							},
+							{
+								"key": "idTransaccion",
+								"type": "text",
+								"value": "12345678"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"MessageRequest\": {\r\n    \"Header\": {\r\n             \"HeaderRequest\": {\r\n               \"consumer\": \"TCRM\",\r\n               \"country\": \"PERU\",\r\n               \"dispositivo\": \"MOVIL\",\r\n               \"language\": \"ES\",\r\n               \"modulo\": \"OM\",\r\n               \"msgType\": \"REQUEST\",\r\n               \"operation\": \"obtenerParametros\",\r\n               \"pid\": \"201804011000\",\r\n               \"system\": \"OM\",\r\n               \"timestamp\": \"2019-04-01T10:12:51-05:00\",\r\n               \"userId\": \"USREAI\",\r\n               \"wsIp\": \"192.168.24.10\"\r\n           }\r\n       },\r\n    \"Body\": {\r\n\t\t\"macAddress\":\"20:73:55:27:EC:32\"\r\n       }\r\n   }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/parametrosincognito/parametros",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"parametrosincognito",
+								"parametros"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2019 22:06:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 () OpenSSL/1.0.2k-fips"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "d8c72625-864b-11e9-969d-ed1330be9cd7"
+						},
+						{
+							"key": "x-amzn-ErrorType",
+							"value": "MissingAuthenticationTokenException"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "auT8ZH5OIAMFbLA="
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\"MessageResponse\": {\r\n   \"Header\": {\"HeaderResponse\":    {\r\n      \"consumer\": \"TCRM\",\r\n      \"pid\": \"201804011000\",\r\n      \"timestamp\": \"2019-06-03T16:26:12-05:00\",\r\n      \"VarArg\": \"\",\r\n      \"status\":       {\r\n         \"type\": \"0\",\r\n         \"code\": \"0\",\r\n         \"message\": \"EJECUCIÃ“N CON Ã‰XITO\",\r\n         \"msgid\": \"DPS02-2d439ecb-e493-4b16-b03f-fe2fe26b9858\"\r\n      }\r\n   }},\r\n   \"Body\":    {\r\n      \"idTransaccion\": \"201804091000\",\r\n      \"codigoRespuesta\": 0,\r\n      \"mensajeRespuesta\": \"Proceso Exitoso\",\r\n      \"parametros\":       [\r\n                  {\r\n            \"parametro\": \"downstreamPower\",\r\n            \"descParametro\": \"Potencia de bajada(dBmV)\",\r\n            \"estado\": 1,\r\n            \"descripcionEstado\": \"OK\",\r\n            \"valor\": 40.5,\r\n            \"codigoRGB\": \"#63b847\"\r\n         },\r\n                  {\r\n            \"parametro\": \"upstreamPower\",\r\n            \"descParametro\": \"Potencia de subida(dBmV)\",\r\n            \"estado\": 1,\r\n            \"descripcionEstado\": \"OK\",\r\n            \"valor\": 40.5,\r\n            \"codigoRGB\": \"#63b847\"\r\n         },\r\n                  {\r\n            \"parametro\": \"upstreamInterfaceSnr\",\r\n            \"descParametro\": \"SNR de bajada (cablemodem)\",\r\n            \"estado\": 1,\r\n            \"descripcionEstado\": \"NO ACEPTABLE\",\r\n            \"valor\": 43,\r\n            \"codigoRGB\": \"#63b847\"\r\n         }\r\n      ],\r\n      \"estado\": 0,\r\n      \"codigoRGB\": \"#Ed3237\"\r\n   }\r\n}}"
+				}
+			]
+		},
+		{
+			"name": "/claro/tipo-documento/listar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2018-03-26T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "12345678",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"canal\":\"3\"\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/claro/tipo-documento/listar",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"claro",
+						"tipo-documento",
+						"listar"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2018-03-26T09:09:09.000Z",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "12345678",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"canal\":\"3\"\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/claro/tipo-documento/listar",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"claro",
+								"tipo-documento",
+								"listar"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 30 May 2019 17:55:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 () OpenSSL/1.0.2k-fips"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "488"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "0dc62d71-8304-11e9-a123-5fe01bfb2e52"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "agjW1EayIAMFamw="
+						},
+						{
+							"key": "x-amzn-Remapped-Date",
+							"value": "Thu, 30 May 2019 17:55:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=98"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"auditResponse\": {\n        \"metodo\": \"listar\",\n        \"idTransaccion\": \"12345678\",\n        \"codigoRespuesta\": \"0\",\n        \"descripcionRespuesta\": \"Operación Exitosa\",\n        \"fecha\": \"2019-05-30T12:55:04.611-05:00\",\n        \"servicio\": \"microservices-tipo-documento\"\n    },\n    \"listTipoDocumentoResponse\": [\n        {\n            \"abreviatura\": \"DNI\",\n            \"descripcion\": \"Documento Nacional Identidad\",\n            \"cod\": \"01\",\n            \"valor\": \"002\"\n        },\n        {\n            \"abreviatura\": \"CE\",\n            \"descripcion\": \"Carnet Extranjeria\",\n            \"cod\": \"02\",\n            \"valor\": \"004\"\n        },\n        {\n            \"abreviatura\": \"PAS\",\n            \"descripcion\": \"Pasaporte\",\n            \"cod\": \"03\",\n            \"valor\": \"006\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/ayuda-tecnico/listar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "12345678",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2018-03-26T09:09:09.000Z",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"canal\":\"3\"\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/ayuda-tecnico/listar",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"ayuda-tecnico",
+						"listar"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "12345678",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2018-03-26T09:09:09.000Z",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"canal\":\"3\"\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/ayuda-tecnico/listar",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"ayuda-tecnico",
+								"listar"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2019 20:18:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 () OpenSSL/1.0.2k-fips"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "574"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "c9050598-863c-11e9-929f-f7e182b4644b"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "auEJoGcaoAMFxmg="
+						},
+						{
+							"key": "x-amzn-Remapped-Date",
+							"value": "Mon, 03 Jun 2019 20:18:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"auditResponse\": {\n        \"metodo\": \"listar\",\n        \"idTransaccion\": \"12345678\",\n        \"codigoRespuesta\": \"0\",\n        \"descripcionRespuesta\": \"Operación Exitosa\",\n        \"fecha\": \"2019-06-03T15:18:44.045-05:00\",\n        \"servicio\": \"microservices-ayuda-tecnico\"\n    },\n    \"listAyudaResponse\": [\n        {\n            \"titulo\": \"Activaciones\",\n            \"descripcion\": \"Contáctate con la Mesa de Activaciones desarrollo\",\n            \"telefono\": \"\",\n            \"codigo\": \"01\"\n        },\n        {\n            \"titulo\": \"Validaciones\",\n            \"descripcion\": \"Contáctate con la Mesa de Validaciones\",\n            \"telefono\": \"148\",\n            \"codigo\": \"02\"\n        },\n        {\n            \"titulo\": \"Supervisión\",\n            \"descripcion\": \"Contáctate con Supervision de Campo\",\n            \"telefono\": \"\",\n            \"codigo\": \"03\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/api/v1-0/validainventario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2017-12-29T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "30",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "EAI",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"MessageRequest\": {\n        \"Header\": {\n            \"HeaderRequest\": {\n                \"consumer\": \"TCRM\",\n                \"country\": \"PERU\",\n                \"dispositivo\": \"MOVIL\",\n                \"language\": \"ES\",\n                \"modulo\": \"OM\",\n                \"msgType\": \"REQUEST\",\n                \"operation\": \"validarInventario\",\n                \"pid\": \"sdfsd123\",\n                \"system\": \"OM\",\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\n                \"userId\": \"201805160000001\",\n                \"wsIp\": \"{{wsip_login}}\"\n            }\n        },\n        \"Body\": {\n            \"dni\": \"42011058\",\n            \"identificador\": \"3467HJJ4DFSD334F\",\n            \"interfaz\": \"2020\",\n            \"tipoEquipo\":\"BASICO\"\n        }\n    }\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/validainventario",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"validainventario"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/instalador/api/v1-0/validainventario",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "timestamp",
+								"type": "text",
+								"value": "2017-12-29T09:09:09.000Z"
+							},
+							{
+								"key": "msgid",
+								"type": "text",
+								"value": "20"
+							},
+							{
+								"key": "idTransaccion",
+								"type": "text",
+								"value": "100000"
+							},
+							{
+								"key": "userId",
+								"type": "text",
+								"value": "AppInstalador"
+							},
+							{
+								"key": "access_token",
+								"type": "text",
+								"value": "{{token_api}}"
+							},
+							{
+								"key": "AuthorizationApi",
+								"type": "text",
+								"value": "{{token_aws}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"MessageRequest\": {\r\n\t\t \t\"Header\": {\r\n          \t\"HeaderRequest\": {\r\n                \"consumer\": \"TCRM\",\r\n                \"country\": \"PERU\",\r\n                \"dispositivo\": \"MOVIL\",\r\n                \"language\": \"ES\",\r\n                \"modulo\": \"OM\",\r\n                \"msgType\": \"REQUEST\",\r\n                \"operation\": \"validarInventario\",\r\n                \"pid\": \"sdfsd123\",\r\n                \"system\": \"OM\",\r\n                \"timestamp\": \"2018-05-15T10:12:51-05:00\",\r\n                \"userId\": \"201805160000001\",\r\n                \"wsIp\": \"172.19.35.63\"\r\n            }\r\n        },\r\n        \"Body\": {\r\n\t\t   \"dni\":\"44284582\",\r\n\t       \"identificador\":\"3467HJJ4DFSD334F\",\r\n\t       \"interfaz\":\"2020\"     ,\r\n\t       \"tipoEquipo\" : \"BASICO\"\r\n        }\r\n    \r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/validainventario",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"validainventario"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, accept, access_token, access-control-request-headers, idTransaccion, msgid, userId, timestamp"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, PUT,OPTIONS , DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "d874c9ef5d0a89960f74dee1"
+						},
+						{
+							"key": "_headerRes",
+							"value": ""
+						},
+						{
+							"key": "requestId",
+							"value": "0000016b0ad7314c-38e8f"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "413"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Jun 2019 19:15:06 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"sdfsd123\",\n                \"timestamp\": \"2019-06-19T14:14:33-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS01-25d9488b-d756-41f6-bf29-efc974d84507\"\n                }\n            }\n        },\n        \"Body\": {\n            \"idTransaccion\": \"100000\",\n            \"codigoRespuesta\": \"0\",\n            \"mensajeRespuesta\": \"Consulta exitosa\",\n            \"estado\": \"1\",\n            \"descripcionEstado\": \"El equipo no perteneciente al inventario asignado\",\n            \"equiposValidados\": [\n                {\n                    \"identificador\": \"12345678\",\n                    \"interfaz\": \"820\",\n                    \"modelo\": \"SD577\",\n                    \"unitAddress\": \"1234567\"\n                },\n                {\n                    \"identificador\": \"12345678\",\n                    \"interfaz\": \"2020\",\n                    \"modelo\": \"SD577\",\n                    \"unitAddress\": \"1234568\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/api/v1-0/activacionesequipoincognito/activaincognito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2017-12-29T09:09.00Z",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "22223",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "12332",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "222",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"MessageRequest\": {\n        \"Header\": {\n            \"HeaderRequest\": {\n                \"consumer\": \"TCRM\",\n                \"country\": \"PERU\",\n                \"dispositivo\": \"MOVIL\",\n                \"language\": \"ES\",\n                \"modulo\": \"OM\",\n                \"msgType\": \"REQUEST\",\n                \"operation\": \"activarIncognito\",\n                \"pid\": \"201804011000\",\n                \"system\": \"OM\",\n                \"timestamp\": \"2019-04-01T10:12:51-05:00\",\n                \"userId\": \"USREAI\",\n                \"wsIp\": \"{{wsip_login}}\"\n            }\n        },\n        \"Body\": {\n            \"nroSot\": \"34851962\",\n            \"equipos\": [\n                {\n                    \"interfaz\": \"820\",\n                    \"idtrs\": \"3021\",\n                    \"identificador\": \"0000120655023120\",\n                    \"unitAddress\": \"3215\",\n                    \"modelo\": \"DCX 525\"\n                },\n                {\n                    \"interfaz\": \"620\",\n                    \"idtrs\": \"3021\",\n                    \"identificador\": \"0000120655023120\",\n                    \"unitAddress\": \"3215\",\n                    \"modelo\": \"DCX 525\"\n                }\n            ]\n        }\n    }\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/activacionesequipoincognito/activaincognito",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"activacionesequipoincognito",
+						"activaincognito"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EXAMPLE - MOCKS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "timestamp",
+								"type": "text",
+								"value": "2017-12-29T09:09.00Z"
+							},
+							{
+								"key": "msgid",
+								"type": "text",
+								"value": "22223"
+							},
+							{
+								"key": "idTransaccion",
+								"type": "text",
+								"value": "12332"
+							},
+							{
+								"key": "userId",
+								"type": "text",
+								"value": "222"
+							},
+							{
+								"key": "access_token",
+								"type": "text",
+								"value": "{{token_api}}"
+							},
+							{
+								"key": "AuthorizationApi",
+								"type": "text",
+								"value": "{{token_aws}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"MessageRequest\": {\r\n    \"Header\": {\r\n             \"HeaderRequest\": {\r\n               \"consumer\": \"TCRM\",\r\n               \"country\": \"PERU\",\r\n               \"dispositivo\": \"MOVIL\",\r\n               \"language\": \"ES\",\r\n               \"modulo\": \"OM\",\r\n               \"msgType\": \"REQUEST\",\r\n               \"operation\": \"activarIncognito\",\r\n               \"pid\": \"201804011000\",\r\n               \"system\": \"OM\",\r\n               \"timestamp\": \"2019-04-01T10:12:51-05:00\",\r\n               \"userId\": \"USREAI\",\r\n               \"wsIp\": \"{{wsip_login}}\"\r\n           }\r\n       },\r\n    \"Body\": {\r\n    \t\r\n\r\n    \t \"nroSot\":\"34851962\",\r\n \"equipos\":[\r\n          { \"interfaz\":\"2020\",\r\n            \"idtrs\":\"3021\",\r\n            \"identificador\":\"0000120655023120\",\r\n            \"unitAddress\":\"3215\",\r\n            \"modelo\":\"DCX 525\"\r\n           }\r\n           ]\r\n    \t\r\n    \t\r\n    \t}\r\n   }\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/activacionesequipoincognito/activaincognito",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"activacionesequipoincognito",
+								"activaincognito"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2019 19:45:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.14.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "407"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, accept, access_token, access-control-request-headers,idTransaccion,msgid,userId,timestamp"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, PUT,OPTIONS , DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "X-ORACLE-DMS-ECID",
+							"value": "a03276f8-b34e-4fde-97a0-f1d4edd1164f-00000719"
+						},
+						{
+							"key": "X-ORACLE-DMS-RID",
+							"value": "0"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "6be22ffe5d1d05f41ed8fafd"
+						},
+						{
+							"key": "requestId",
+							"value": "0000016b264fa2cd-83fa54"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"201804011000\",\n                \"timestamp\": \"2019-07-03T14:45:57-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS02-4ff7d9dd-8bd4-41fb-8b8a-fe2fe26b7f4f\"\n                }\n            }\n        },\n        \"Body\": {\n            \"idTransaccion\": \"12332\",\n            \"codigoRespuesta\": \"0\",\n            \"mensajeRespuesta\": \"activarHfc - Operacion Exitosa\",\n            \"equipos\": [\n                {\n              \n                    \"unitAddress\": \"3215\",\n                    \"identificador\": \"12345678\",\n                    \"estado\": 0,\n                    \"descripcionResultado\": \"\",\n                    \"dataProceso\": {\n                        \"nroIntentos\": 1,\n                        \"maxIntentos\": 2,\n                        \"estadoProceso\": 1,\n                        \"tiempoTotal\": \"240\",\n                        \"tiempoRestante\": \"240\"\n                    }\n                }\n            ]\n        }\n    }\n}\n"
+				}
+			]
+		},
+		{
+			"name": "instalador/api/v1-0/activacionesequipoincognito/consultaactivacion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2007-11-03T16:18:05.366Z",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "20000",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "12345",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "123456678909",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"MessageRequest\": {\r\n    \"Header\": {\r\n             \"HeaderRequest\": {\r\n               \"consumer\": \"TCRM\",\r\n               \"country\": \"PERU\",\r\n               \"dispositivo\": \"MOVIL\",\r\n               \"language\": \"ES\",\r\n               \"modulo\": \"OM\",\r\n               \"msgType\": \"REQUEST\",\r\n               \"operation\": \"consultarActivacion\",\r\n               \"pid\": \"201804011000\",\r\n               \"system\": \"OM\",\r\n               \"timestamp\": \"2019-04-01T10:12:51-05:00\",\r\n               \"userId\": \"USREAI\",\r\n               \"wsIp\": \"{{wsip_login}}\"\r\n           }\r\n       },\r\n    \"Body\": {\r\n\t\t\"numeroSot\":\"34851962\"\r\n       }\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/activacionesequipoincognito/consultaactivacion",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"activacionesequipoincognito",
+						"consultaactivacion"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EXAMPLE - MOCKS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2007-11-03T16:18:05.366Z",
+								"type": "text"
+							},
+							{
+								"key": "msgid",
+								"value": "20000",
+								"type": "text"
+							},
+							{
+								"key": "userId",
+								"value": "12345",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "123456678909",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{token_api}}",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"MessageRequest\": {\r\n    \"Header\": {\r\n             \"HeaderRequest\": {\r\n               \"consumer\": \"TCRM\",\r\n               \"country\": \"PERU\",\r\n               \"dispositivo\": \"MOVIL\",\r\n               \"language\": \"ES\",\r\n               \"modulo\": \"OM\",\r\n               \"msgType\": \"REQUEST\",\r\n               \"operation\": \"consultarActivacion\",\r\n               \"pid\": \"201804011000\",\r\n               \"system\": \"OM\",\r\n               \"timestamp\": \"2019-04-01T10:12:51-05:00\",\r\n               \"userId\": \"USREAI\",\r\n               \"wsIp\": \"{{wsip_login}}\"\r\n           }\r\n       },\r\n    \"Body\": {\r\n\t\t\"numeroSot\":\"34851962\"\r\n       }\r\n   }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/activacionesequipoincognito/consultaactivacion",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"activacionesequipoincognito",
+								"consultaactivacion"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2019 19:53:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.14.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "441"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, accept, access_token, access-control-request-headers,idTransaccion,msgid,userId,timestamp"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, PUT,OPTIONS , DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "X-ORACLE-DMS-ECID",
+							"value": "531ff5ab-2587-4737-abbc-3878c116ab36-00000731"
+						},
+						{
+							"key": "X-ORACLE-DMS-RID",
+							"value": "0"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "e1df17c05d1d07c037019cad"
+						},
+						{
+							"key": "requestId",
+							"value": "0000016b264fa2cd-8403cb"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"201804011000\",\n                \"timestamp\": \"2019-07-03T14:53:38-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS01-54b05ad5-fa24-4b51-b01c-c017dfe18b11\"\n                }\n            }\n        },\n        \"Body\": {\n            \"idTransaccion\": \"123456678909\",\n            \"codigoRespuesta\": \"0\",\n            \"mensajeRespuesta\": \"consultarActivacionHfc - Operacion Exitosa\",\n            \"listaEquipos\": [\n                {\n                    \"codEstado\": 2,\n                    \"descripcionEstado\": \"Pendiente de activacion\",\n                    \"identificador\": \"\",\n                    \"interfaz\": \"620\",\n                    \"modelo\": \"\"\n                },\n                {\n                    \"codEstado\": 2,\n                    \"descripcionEstado\": \"Pendiente de activacion\",\n                    \"identificador\": \"\",\n                    \"interfaz\": \"820\",\n                    \"modelo\": \"\"\n                },\n                {\n                    \"codEstado\": 2,\n                    \"descripcionEstado\": \"Pendiente de activacion\",\n                    \"identificador\": \"\",\n                    \"interfaz\": \"2020\",\n                    \"modelo\": \"\"\n                },\n                {\n                    \"codEstado\": 2,\n                    \"descripcionEstado\": \"Pendiente de activacion\",\n                    \"identificador\": \"\",\n                    \"interfaz\": \"2020\",\n                    \"modelo\": \"\"\n                },\n                {\n                    \"codEstado\": 2,\n                    \"descripcionEstado\": \"Pendiente de activacion\",\n                    \"identificador\": \"\",\n                    \"interfaz\": \"2020\",\n                    \"modelo\": \"\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/api/v1-0/validaequipos/equipos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2007-11-03T16:18:05.366Zs",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "222",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "USREAI",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "jgug8-di4jn-lpnm9-qahdb0",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"MessageRequest\": {\r\n    \"Header\": {\r\n             \"HeaderRequest\": {\r\n               \"consumer\": \"TCRM\",\r\n               \"country\": \"PERU\",\r\n               \"dispositivo\": \"MOVIL\",\r\n               \"language\": \"ES\",\r\n               \"modulo\": \"OM\",\r\n               \"msgType\": \"REQUEST\",\r\n               \"operation\": \"obtenerEquipos\",\r\n               \"pid\": \"201804011000\",\r\n               \"system\": \"OM\",\r\n               \"timestamp\": \"2019-04-01T10:12:51-05:00\",\r\n               \"userId\": \"USREAI\",\r\n               \"wsIp\": \"{{wsip_login}}\"\r\n           }\r\n       },\r\n    \"Body\": {\r\n\t\t\"codigoSot\": \"34851962\"\r\n       }\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/api/v1-0/validaequipos/equipos?",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"api",
+						"v1-0",
+						"validaequipos",
+						"equipos"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EXAMPLE -MOCKS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "timestamp",
+								"type": "text",
+								"value": "2007-11-03T16:18:05.366Zs"
+							},
+							{
+								"key": "msgid",
+								"type": "text",
+								"value": "222"
+							},
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "userId",
+								"type": "text",
+								"value": "USREAI"
+							},
+							{
+								"key": "idTransaccion",
+								"type": "text",
+								"value": "jgug8-di4jn-lpnm9-qahdb0"
+							},
+							{
+								"key": "access_token",
+								"type": "text",
+								"value": "{{token_api}}"
+							},
+							{
+								"key": "AuthorizationApi",
+								"type": "text",
+								"value": "{{token_aws}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"MessageRequest\": {\r\n    \"Header\": {\r\n             \"HeaderRequest\": {\r\n               \"consumer\": \"TCRM\",\r\n               \"country\": \"PERU\",\r\n               \"dispositivo\": \"MOVIL\",\r\n               \"language\": \"ES\",\r\n               \"modulo\": \"OM\",\r\n               \"msgType\": \"REQUEST\",\r\n               \"operation\": \"obtenerEquipos\",\r\n               \"pid\": \"201804011000\",\r\n               \"system\": \"OM\",\r\n               \"timestamp\": \"2019-04-01T10:12:51-05:00\",\r\n               \"userId\": \"USREAI\",\r\n               \"wsIp\": \"{{wsip_login}}\"\r\n           }\r\n       },\r\n    \"Body\": {\r\n\t\t\"codigoSot\": \"34851962\"\r\n       }\r\n   }\r\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/api/v1-0/validaequipos/equipos?",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"api",
+								"v1-0",
+								"validaequipos",
+								"equipos"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 03 Jul 2019 19:47:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx/1.14.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "460"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, accept, access_token, access-control-request-headers"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, PUT,OPTIONS , DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "X-Backside-Transport",
+							"value": "OK OK,OK OK,OK OK,OK OK,OK OK,OK OK"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "e1df17c05d1d066836ed5fad"
+						},
+						{
+							"key": "requestId",
+							"value": "0000016b264fa2cd-83fc7d"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"MessageResponse\": {\n        \"Header\": {\n            \"HeaderResponse\": {\n                \"consumer\": \"TCRM\",\n                \"pid\": \"201804011000\",\n                \"timestamp\": \"2019-07-03T14:47:54-05:00\",\n                \"VarArg\": \"\",\n                \"status\": {\n                    \"type\": \"0\",\n                    \"code\": \"0\",\n                    \"message\": \"EJECUCIÓN CON ÉXITO\",\n                    \"msgid\": \"DPS01-3c2d5408-bc05-4d46-9c8d-c017dfe1d41b\"\n                }\n            }\n        },\n        \"Body\": {\n            \"idTransaccion\": \"jgug8-di4jn-lpnm9-qahdb0\",\n            \"codigoRespuesta\": 0,\n            \"mensajeRespuesta\": \"Proceso Exitoso\",\n            \"equipos\": [\n                {\n                    \"interfaz\": 820,\n                    \"descripcion\": \"EMTA\",\n                    \"idtrs\": 1990368706,\n                    \"identificador\": null,\n                    \"tipoEquipo\":\"BASICO\"\n                },\n                   {\n                    \"interfaz\": 620,\n                    \"descripcion\": \"EMTA\",\n                    \"idtrs\": 1990368706,\n                    \"identificador\": null,\n                    \"tipoEquipo\":\"BASICO\"\n                },\n                {\n                    \"interfaz\": 2020,\n                    \"descripcion\": \"DECO_HD\",\n                    \"idtrs\": 1990368706,\n                    \"identificador\": null,\n                    \"tipoEquipo\":\"BASICO\"\n                },\n                {\n                    \"interfaz\": 2020,\n                    \"descripcion\": \"DECO_HD\",\n                    \"idtrs\": 1990368716,\n                    \"identificador\": null,\n                    \"tipoEquipo\":\"BASICO\"\n                },\n                {\n                    \"interfaz\": 2020,\n                    \"descripcion\": \"DECO_HD\",\n                    \"idtrs\": 1990368719,\n                    \"identificador\": null,\n                    \"tipoEquipo\":\"BASICO\"\n                },\n                {\n                    \"interfaz\": 2020,\n                    \"descripcion\": \"DECO_HD\",\n                    \"idtrs\": 1990368722,\n                    \"identificador\": null,\n                    \"tipoEquipo\":\"BASICO\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/instalador/activacionequipo/consultarproceso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access_token",
+						"value": "{{token_api}}",
+						"type": "text"
+					},
+					{
+						"key": "AuthorizationApi",
+						"value": "{{token_aws}}",
+						"type": "text"
+					},
+					{
+						"key": "timestamp",
+						"value": "2019-03-26T09:09:09.000Z",
+						"type": "text"
+					},
+					{
+						"key": "idTransaccion",
+						"value": "12345678",
+						"type": "text"
+					},
+					{
+						"key": "msgid",
+						"value": "2222",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "USEREAI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"sot\": \"1234567890\",\n\t\"equipoList\": [\n\t\t{\n\t\t\t\"interfaz\": \"2020\",\n\t\t\t\"identificador\": \"1234\"\n\t\t}\n\t]\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/instalador/activacionequipo/consultarproceso",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"instalador",
+						"activacionequipo",
+						"consultarproceso"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/instalador/activacionequipo/consultarproceso",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "AuthorizationApi",
+								"value": "{{token_aws}}",
+								"type": "text"
+							},
+							{
+								"key": "timestamp",
+								"value": "2019-03-26T09:09:09.000Z",
+								"type": "text"
+							},
+							{
+								"key": "idTransaccion",
+								"value": "12345678",
+								"type": "text"
+							},
+							{
+								"key": "msgid",
+								"value": "2222",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"sot\": \"1234567890\",\n\t\"equipoList\": [\n\t\t\t{\n\t\t\t\t\"interfaz\": \"2020\",\n\t\t\t\t\"identificador\": \"1234\"\n\t\t\t}\n\t\t]\n}"
+						},
+						"url": {
+							"raw": "{{domain}}/instalador/activacionequipo/consultarproceso",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"instalador",
+								"activacionequipo",
+								"consultarproceso"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 27 Jun 2019 21:54:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.34 () OpenSSL/1.0.2k-fips"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "2c1373c6-9926-11e9-a04c-8f1a65802d6d"
+						},
+						{
+							"key": "x-amzn-ErrorType",
+							"value": "MissingAuthenticationTokenException"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "b9YtmGvToAMFhNQ="
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"auditResponse\": {\n    \"servicio\": \"ms-actividadtecnico-rest\",\n    \"idTransaccion\": \"12345678\",\n    \"metodo\": \"consultarPaso\",\n    \"fecha\": \"2019-05-28T10:35:35.253-05:00\",\n    \"codigoRespuesta\": \"0\",\n    \"descripcionRespuesta\": \"Operacion Exitosa\"\n  },\n  \"sot\": \"1234567890\",\n  \"equipoList\": [\n    {\n      \"interfaz\": \"2020\",\n      \"identificador\": \"MAC\",\n      \"datosProceso\": {\n        \"nroIntento\": 0,\n        \"maxIntentos\": 0,\n        \"tiempoTotal\": 180,\n        \"tiempoRestante\": 180,\n        \"estadoProceso\": 1\n      }\n    }\n  ]\n}"
+				}
+			]
+		}
+	]
+}
